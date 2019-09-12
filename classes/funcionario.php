@@ -1,6 +1,6 @@
 <?php
 
-  require_once("clases/usuario.php");
+  namespace Classes\Request;
 
   class Funcionario extends Usuario
   {
