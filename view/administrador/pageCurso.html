@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Projeto Request</title>
+
+  <!-- Bootstrap e estilo.css -->
+  <link rel="stylesheet" href="../../assets/css/template/reset.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/estilo.css">
+
+  <!-- Importa Google Icon Font e materialize.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../assets/css/administrador/materialize.min.css"  media="screen,projection"/>
+
+  <!-- Framework Bulma e Font Awesome -->
+  <link rel="stylesheet" href="../../assets/css/template/all.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bulma.min.css">
+
+  <!-- Materialize - Para o navegador saber que o site é optimizado para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <section class="hero is-fullheight" id="heroFull">
+    <div class="navbar-fixed">
+      <nav class="bgtopo has-navbar-fixed-top">
+        <div class="nav-wrapper container-fluid">
+          <div class="row">
+            <div class="col l3 m3 s3 left">
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="col l9 m9 s9 right nomeAdministrador">
+              <div class="dropdown right" id="dropdownAdministradorButton">
+                <button class="dropdown-toggle" data-toggle="dropdown" id="downButton">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownAdministradorEstilo">
+                  <li><a href="pagePerfil.html">Meu Perfil</a></li>
+                  <li><a href="#">Sair</a></li>
+                </ul>
+              </div>
+              <ul class="right">
+                <p id="nomeAdministrador">Administrador</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="pageHistorico.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">history</i>Histórico
+        </a>
+      </li>
+       <li>
+        <a href="pageFuncionario.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">people</i>Funcionários
+        </a>
+      </li>
+      <li>
+        <a href="pageCurso.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">school</i>Componentes
+        </a>
+      </li>
+      <li>
+        <a href="pagePerfil.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">person</i>Minha Conta
+        </a>
+      </li>
+    </ul>
+    <section class="main hide-on-med-and-down">
+      <aside class="keep">
+        <ul id="marginItens">
+          <li>
+            <a href="pageHistorico.html">
+              <span><i class="material-icons">history</i></span>
+               Histórico
+            </a>
+          </li>
+          <li>
+            <a href="pageFuncionario.html">
+              <span><i class="material-icons">people</i></span>
+               Funcionários
+            </a>
+          </li>
+          <li>
+            <a href="pageCurso.html">
+              <span><i class="material-icons">school</i></span>
+               Componentes
+            </a>
+          </li>
+          <li>
+            <a href="pagePerfil.html">
+              <span><i class="material-icons">person</i></span>
+               Minha conta
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="hero is-fullheight-with-navbar" id="heroFullHeight">
+      <div class="row conteudo">
+        <div class="col l2 m0 s0">
+        </div>
+        <div class="col l10 m12 s12" id="colunaConteudo">
+
+          <div class="row conteudo2" id="barraComponentes">
+            <div class="input-field col l12 m12 s12" id="opcoesComponentes">
+              <ul>
+                <li>
+                  <a href="pageCurso.html" id="componentesOpc1">Curso</a>
+                  <a href="pageDisciplina.html" id="componentesOpc2">Disciplina</a>
+                  <a href="pageProfessor.html" id="componentesOpc3">Professor</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row conteudo2" id="componentesFerramentas">
+            <div class="col l6 m6 s12" id="positionOptions">
+              <button id="btnNovoCurso" class="button waves-effect waves-light modal-trigger is-dark" type="button" href="#modal2" data-target="modal2">Novo curso
+                <i class="material-icons right">school</i>
+              </button>
+              <button type="button" id="btnEditarCurso" data-target="modal3" class="button waves-effect waves-light modal-trigger is-light" href="#modal3">Editar curso</button>
+            </div>
+            <div class="input-field col l6 m6 s12" id="inputPesquisar">
+              <i class="material-icons prefix fas fa-search"></i>
+              <input class="form-control" type="search" placeholder="Pesquisar">
+            </div>
+          </div>
+
+          <div id="modal2" class="modal modal-fixed-footer">
+            <div class="modal-content" id="modalStyle2">
+              <button href="#!" class="modal-close waves-effect waves-green" id="agreeButton">Agree</button>
+              <div class="container">
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-3" id="titleModal2">Cadastro de curso</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-goup">
+                      <div class="col l4 m4 s4">
+                        <label for="curso" class="title is-6 input-field">Curso</label>
+                      </div>
+                      <div class="col l8 m8 s8">
+                        <input type="text" placeholder="Curso" class="input form-control" id="inputCadastroCurso">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l5 m5 s5">
+                        <label for="modulo" class="title is-6">N° Módulos</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" id="inputCadastroCurso">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer" id="modalFooStyle2">
+              <button type="button" class="button is-dark" id="modalButton2Cad">Cadastrar</button>
+              <button type="button" class="button is-light" id="modalButton2" onclick="javascript:location.href='pageCurso.html'">Cancelar</button>
+            </div>
+
+          </div>
+
+          <div id="modal3" class="modal modal-fixed-footer">
+            <div class="modal-content" id="modalStyle3">
+              <button href="#!" class="modal-close waves-effect waves-green" id="agreeButton">Agree</button>
+              <div class="container">
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-3" id="titleModal3">Editar curso</h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l4 m4 s4">
+                        <label for="curso" class="title is-6">Curso</label>
+                      </div>
+                      <div class="col l8 m8 s8">
+                        <select class="form-control" id="selectInfoCurso">
+                          <option>Desenvolvimento de Sistemas</option>
+                          <option>Manutenção e suporte em informática</option>
+                          <option>Enfermagem</option>
+                          <option>Edificações</option>
+                          <option>Turismo receptivo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Nome do curso" class="input form-control" id="inputInfoCurso">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">N° Módulos</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" id="selectInfoCurso">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">Situação</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" id="selectInfoCurso">
+                          <option>Ativado</option>
+                          <option>Desativado</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer" id="modalFooStyle3">
+              <button type="button" class="button is-dark" id="modalButton3Cad">Salvar</button>
+              <button type="button" class="button is-light" id="modalButton3" onclick="javascript:location.href='pageCurso.html'">Cancelar</button>
+            </div>
+
+          </div>
+
+          <div class="row conteudo2" id="colorTitleComponentes">
+            <div class="row conteudo2" id="titulosComponentes">
+              <div class="col l7 m7 s7">
+                <input type="text" value="Curso" readonly id="estiloTitulos3">
+              </div>
+              <div class="col l5 m5 s5">
+                <input type="text" value="Situação" readonly id="estiloTitulos3">
+              </div>
+            </div>
+          </div>
+
+          <div class="row curso">
+            <div class="col l12 m12 s12" id="colCursos">
+              <div class="row conteudo" id="linhaCurso">
+                <div class="col l12 m12 s12">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoCurso">
+                          <div class="col l7 m7 s7" id="estiloInputCurso">
+                            <input type="text" value="Desenvolvimento de sistemas" id="cursoInput" readonly>
+                          </div>
+                          <div class="col l5 m5 s5" id="estiloInputCurso">
+                            <input type="text" value="Ativado" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoCurso">
+                          <div class="col l7 m7 s7" id="estiloInputCurso">
+                            <input type="text" value="Manutenção e suporte em informática" id="cursoInput" readonly>
+                          </div>
+                          <div class="col l5 m5 s5" id="estiloInputCurso">
+                            <input type="text" value="Ativado" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoCurso">
+                          <div class="col l7 m7 s7" id="estiloInputCurso">
+                            <input type="text" value="Enfermagem" id="cursoInput" readonly>
+                          </div>
+                          <div class="col l5 m5 s5" id="estiloInputCurso">
+                            <input type="text" value="Ativado" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoCurso">
+                          <div class="col l7 m7 s7" id="estiloInputCurso">
+                            <input type="text" value="Edificações" id="cursoInput" readonly>
+                          </div>
+                          <div class="col l5 m5 s5" id="estiloInputCurso">
+                            <input type="text" value="Ativado" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoCurso">
+                          <div class="col l7 m7 s7" id="estiloInputCurso">
+                            <input type="text" value="Turismo receptivo" id="cursoInput" readonly>
+                          </div>
+                          <div class="col l5 m5 s5" id="estiloInputCurso">
+                            <input type="text" value="Desativado" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- JavaScript no fim da body para optimizar o carregamento - Jquery e Bootstrap -->
+  <script type="text/javascript" src="../../assets/js/administrador/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/comandos.js"></script>
+
+  <!-- Materialize -->
+  <script type="text/javascript" src="../../assets/js/administrador/materialize.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+
+</body>
+</html>

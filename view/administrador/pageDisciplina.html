@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Projeto Request</title>
+
+  <!-- Bootstrap e estilo.css -->
+  <link rel="stylesheet" href="../../assets/css/template/reset.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/estilo.css">
+
+  <!-- Importa Google Icon Font e materialize.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../assets/css/administrador/materialize.min.css"  media="screen,projection"/>
+
+  <!-- Framework Bulma e Font Awesome -->
+  <link rel="stylesheet" href="../../assets/css/template/all.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bulma.min.css">
+
+  <!-- Materialize - Para o navegador saber que o site é optimizado para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <section class="hero is-fullheight" id="heroFull">
+    <div class="navbar-fixed">
+      <nav class="bgtopo has-navbar-fixed-top">
+        <div class="nav-wrapper container-fluid">
+          <div class="row">
+            <div class="col l3 m3 s3 left">
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="col l9 m9 s9 right nomeAdministrador">
+              <div class="dropdown right" id="dropdownAdministradorButton">
+                <button class="dropdown-toggle" data-toggle="dropdown" id="downButton">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownAdministradorEstilo">
+                  <li><a href="pagePerfil.html">Meu Perfil</a></li>
+                  <li><a href="#">Sair</a></li>
+                </ul>
+              </div>
+              <ul class="right">
+                <p id="nomeAdministrador">Administrador</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="pageHistorico.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">history</i>Histórico
+        </a>
+      </li>
+       <li>
+        <a href="pageFuncionario.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">people</i>Funcionários
+        </a>
+      </li>
+      <li>
+        <a href="pageCurso.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">school</i>Componentes
+        </a>
+      </li>
+      <li>
+        <a href="pagePerfil.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">person</i>Minha Conta
+        </a>
+      </li>
+    </ul>
+    <section class="main hide-on-med-and-down">
+      <aside class="keep">
+        <ul id="marginItens">
+          <li>
+            <a href="pageHistorico.html">
+              <span><i class="material-icons">history</i></span>
+               Histórico
+            </a>
+          </li>
+          <li>
+            <a href="pageFuncionario.html">
+              <span><i class="material-icons">people</i></span>
+               Funcionários
+            </a>
+          </li>
+          <li>
+            <a href="pageCurso.html">
+              <span><i class="material-icons">school</i></span>
+               Componentes
+            </a>
+          </li>
+          <li>
+            <a href="pagePerfil.html">
+              <span><i class="material-icons">person</i></span>
+               Minha conta
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="hero is-fullheight-with-navbar" id="heroFullHeight">
+      <div class="row conteudo">
+        <div class="col l2 m0 s0">
+        </div>
+        <div class="col l10 m12 s12" id="colunaConteudo">
+          <div class="row conteudo2" id="barraComponentes">
+            <div class="input-field col l12 m12 s12" id="opcoesComponentes">
+              <ul>
+                <li>
+                  <a href="pageCurso.html" id="componentesOpc2">Curso</a>
+                  <a href="pageDisciplina.html" id="componentesOpc1">Disciplina</a>
+                  <a href="pageProfessor.html" id="componentesOpc3">Professor</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row conteudo2" id="componentesFerramentas">
+            <div class="col l6 m8 s12" id="positionOptions">
+              <button id="btnNovaDisciplina" class="button waves-effect waves-light modal-trigger is-dark" type="button" href="#modal4" data-target="modal4">Nova disciplina
+                <i class="material-icons right">library_books</i>
+              </button>
+              <button type="button" id="btnEditarDisciplina" data-target="modal5" class="button waves-effect waves-light modal-trigger is-light" href="#modal5">Editar disciplina</button>
+            </div>
+            <div class="input-field col l6 m4 s12" id="inputPesquisar">
+              <i class="material-icons prefix fas fa-search"></i>
+              <input class="form-control" type="search" placeholder="Pesquisar">
+            </div>
+          </div>
+
+          <div id="modal4" class="modal modal-fixed-footer">
+            <div class="modal-content" id="modalStyle4">
+              <button href="#!" class="modal-close waves-effect waves-green" id="agreeButton">Agree</button>
+              <div class="container">
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-3" id="titleModal4">Cadastro de disciplina</h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-goup">
+                      <div class="col l5 m5 s5">
+                        <label for="curso" class="title is-6 input-field">Disciplina</label>
+                      </div>
+                      <div class="col l7 m7 s7">
+                        <input type="text" placeholder="Disciplina" class="input form-control" id="inputCadastroDisciplina">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l4 m4 s4">
+                        <label for="modulo" class="title is-6">Curso</label>
+                      </div>
+                      <div class="col l8 m8 s8">
+                        <select class="form-control">
+                          <option>Desenvolvimento de Sistemas</option>
+                          <option>Manutenção e suporte em informática</option>
+                          <option>Enfermagem</option>
+                          <option>Edificações</option>
+                          <option>Turismo receptivo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">Módulo</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12 center-align">
+                    <button class="button is-light waves-effect waves-light">Adicionar curso
+                      <i class="fas fa-plus" id="plusButton"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12" id="tableStyle">
+                    <div class="col l12 m12 s12">
+                      <div class="col l8 m8 s8">
+                        <input type="text" class="has-text-weight-bold" value="Curso" readonly>
+                      </div>
+                      <div class="col l4 m4 s4">
+                        <input type="text" class="has-text-weight-bold" value="Anular" readonly>
+                      </div>
+                    </div>
+                    <div class="col l12 m12 s12" id="tableStyleTop">
+                      <div class="col l8 m8 s8">
+                        <input type="text" value="Desenvolvimento de sistemas" readonly>
+                      </div>
+                      <div class="col l3 m3 s3">
+                        <button class="button is-white waves-effect waver-light" id="modalBtn">
+                          <i class="fas fa-trash"></i>
+                        </button>
+                      </div>
+                      <div class="col l8 m8 s8">
+                        <input type="text" value="Administração" readonly>
+                      </div>
+                      <div class="col l3 m3 s3">
+                        <button class="button is-white waves-effect waver-light" id="modalBtn">
+                          <i class="fas fa-trash"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer" id="modalFooStyle4">
+              <button type="button" class="button is-dark" id="modalButton4Cad">Cadastrar</button>
+              <button type="button" class="button is-light" id="modalButton4" onclick="javascript:location.href='pageDisciplina.html'">Cancelar</button>
+            </div>
+
+          </div>
+
+          <div id="modal5" class="modal modal-fixed-footer">
+            <div class="modal-content" id="modalStyle5">
+              <button href="#!" class="modal-close waves-effect waves-green" id="agreeButton">Agree</button>
+              <div class="container">
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-3" id="titleModal5">Editar disciplina</h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-5">Buscar disciplina</h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="input-field col l12 m12 s12" id="inputPesquisar">
+                      <i class="material-icons prefix fas fa-search"></i>
+                      <input class="form-control" type="search" placeholder="Pesquisar">
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l12 m12 s12">
+                        <select class="form-control">
+                          <option>Linguagem, trabalho e tecnologia</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr style="height:1px; border:none; color:#ccc; background-color:#ccc; margin-top: 0px; margin-bottom: 1.5rem;"/>
+
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                    <h1 class="center-align title is-5">Alterar disciplina</h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="col l10 m10 s10">
+                      <div class="form-goup">
+                        <input type="text" placeholder="Disciplina" class="input form-control" id="inputCadastroProfessor" disabled>
+                      </div>
+                    </div>
+                    <div class="col m1 m1 s1">
+                      <button class="button is-light waves-effect waves-light" id="modalBtn">
+                          <i class="fas fa-pen"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12" id="tableStyle">
+                    <div class="col l12 m12 s12">
+                      <div class="col l12 m12 s12">
+                        <input type="text" class="has-text-weight-bold" value="Curso" readonly>
+                      </div>
+                    </div>
+                    <div class="col l12 m12 s12" id="tableStyleTop">
+                      <div class="col l10 m10 s10">
+                        <input type="text" value="Desenvolvimento de sistemas" readonly>
+                      </div>
+                      <div class="col l2 m2 s2">
+                        <button class="button is-white waves-effect waver-light" id="modalBtn">
+                          <i class="fas fa-pen"></i>
+                        </button>
+                      </div>
+                      <div class="col l10 m10 s10">
+                        <input type="text" value="Administração" readonly>
+                      </div>
+                      <div class="col l2 m2 s2">
+                        <button class="button is-white waves-effect waver-light" id="modalBtn">
+                          <i class="fas fa-pen"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12 center-align">
+                    <button class="button is-light waves-effect waves-light">Novo curso
+                      <i class="fas fa-plus" id="plusButton"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l4 m4 s4">
+                        <label for="modulo" class="title is-6">Editar curso</label>
+                      </div>
+                      <div class="col l8 m8 s8">
+                        <select class="form-control" disabled>
+                          <option>Desenvolvimento de Sistemas</option>
+                          <option>Manutenção e suporte em informática</option>
+                          <option>Enfermagem</option>
+                          <option>Edificações</option>
+                          <option>Turismo receptivo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">Editar módulo</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" disabled>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12 center-align">
+                    <button type="button" class="button is-dark" id="btnSalvarEdit" disabled>Salvar alterações</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer" id="modalFooStyle5">
+              <button type="button" class="button is-dark" id="modalButton5Cad">Salvar</button>
+              <button type="button" class="button is-light" id="modalButton5" onclick="javascript:location.href='pageDisciplina.html'">Cancelar</button>
+            </div>
+
+          </div>
+
+          <div class="row conteudo2" id="colorTitleComponentes">
+            <div class="row conteudo2" id="titulosComponentes">
+              <div class="col l4 m4 s4">
+                <input type="text" value="Disciplina" readonly id="estiloTitulos3">
+              </div>
+              <div class="col l6 m6 s6">
+                <input type="text" value="Curso" readonly id="estiloTitulos3">
+              </div>
+              <div class="col l2 m2 s2">
+                <input type="text" value="Módulo" readonly id="estiloTitulos3">
+              </div>
+            </div>
+          </div>
+
+          <div class="row disciplina">
+            <div class="col l12 m12 s12" id="colDisciplina">
+              <div class="row conteudo" id="linhaDisciplina">
+                <div class="col l12 m12 s12">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoDisciplina">
+                          <div class="col l4 m4 s4" id="estiloInputDisciplina">
+                            <input type="text" value="Programação WEB I" readonly>
+                          </div>
+                          <div class="col l6 m6 s6" id="estiloInputDisciplina">
+                            <input type="text" value="Desenvolvimento de sistemas" readonly>
+                          </div>
+                          <div class="col l2 m2 s2" id="estiloInputDisciplina">
+                            <input type="number" value="1" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoDisciplina">
+                          <div class="col l4 m4 s4" id="estiloInputDisciplina">
+                            <input type="text" value="Banco de dados II" readonly>
+                          </div>
+                          <div class="col l6 m6 s6" id="estiloInputDisciplina">
+                            <input type="text" value="Desenvolvimento de sistemas" readonly>
+                          </div>
+                          <div class="col l2 m2 s2" id="estiloInputDisciplina">
+                            <input type="number" value="2" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoDisciplina">
+                          <div class="col l4 m4 s4" id="estiloInputDisciplina">
+                            <input type="text" value="Desenvolvimento de sistemas" readonly>
+                          </div>
+                          <div class="col l6 m6 s6" id="estiloInputDisciplina">
+                            <input type="text" value="Desenvolvimento de sistemas" readonly>
+                          </div>
+                          <div class="col l2 m2 s2" id="estiloInputDisciplina">
+                            <input type="number" value="2" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoDisciplina">
+                          <div class="col l4 m4 s4" id="estiloInputDisciplina">
+                            <input type="text" value="Programação de aplicativos mobile II" readonly>
+                          </div>
+                          <div class="col l6 m6 s6" id="estiloInputDisciplina">
+                            <input type="text" value="Desenvolvimento de sistemas" readonly>
+                          </div>
+                          <div class="col l2 m2 s2" id="estiloInputDisciplina">
+                            <input type="number" value="3" readonly>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- JavaScript no fim da body para optimizar o carregamento - Jquery e Bootstrap -->
+  <script type="text/javascript" src="../../assets/js/administrador/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/comandos.js"></script>
+
+  <!-- Materialize -->
+  <script type="text/javascript" src="../../assets/js/administrador/materialize.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+
+</body>
+</html>
