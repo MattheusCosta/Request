@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Projeto Request</title>
+
+  <!-- Bootstrap e estilo.css -->
+  <link rel="stylesheet" href="../../assets/css/template/reset.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/estilo.css">
+
+  <!-- Importa Google Icon Font e materialize.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../assets/css/administrador/materialize.min.css"  media="screen,projection"/>
+
+  <!-- Framework Bulma e Font Awesome -->
+  <link rel="stylesheet" href="../../assets/css/template/all.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bulma.min.css">
+
+  <!-- Materialize - Para o navegador saber que o site é optimizado para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <section class="hero is-fullheight" id="heroFull">
+    <div class="navbar-fixed">
+      <nav class="bgtopo has-navbar-fixed-top">
+        <div class="nav-wrapper container-fluid">
+          <div class="row">
+            <div class="col l3 m3 s3 left">
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="col l9 m9 s9 right nomeAdministrador">
+              <div class="dropdown right" id="dropdownAdministradorButton">
+                <button class="dropdown-toggle" data-toggle="dropdown" id="downButton">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownAdministradorEstilo">
+                  <li><a href="pagePerfil.html">Meu Perfil</a></li>
+                  <li><a href="#">Sair</a></li>
+                </ul>
+              </div>
+              <ul class="right">
+                <p id="nomeAdministrador">Administrador</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="pageHistorico.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">history</i>Histórico
+        </a>
+      </li>
+       <li>
+        <a href="pageFuncionario.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">people</i>Funcionários
+        </a>
+      </li>
+      <li>
+        <a href="pageCurso.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">school</i>Componentes
+        </a>
+      </li>
+      <li>
+        <a href="pagePerfil.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">person</i>Minha Conta
+        </a>
+      </li>
+    </ul>
+    <section class="main hide-on-med-and-down">
+      <aside class="keep">
+        <ul id="marginItens">
+          <li>
+            <a href="pageHistorico.html">
+              <span><i class="material-icons">history</i></span>
+               Histórico
+            </a>
+          </li>
+          <li>
+            <a href="pageFuncionario.html">
+              <span><i class="material-icons">people</i></span>
+               Funcionários
+            </a>
+          </li>
+          <li>
+            <a href="pageCurso.html">
+              <span><i class="material-icons">school</i></span>
+               Componentes
+            </a>
+          </li>
+          <li>
+            <a href="pagePerfil.html">
+              <span><i class="material-icons">person</i></span>
+               Minha conta
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="hero is-fullheight-with-navbar" id="heroFullHeight">
+      <div class="row conteudo">
+        <div class="col l2 m0 s0">
+        </div>
+        <div class="col l10 m12 s12" id="colunaConteudo">
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- JavaScript no fim da body para optimizar o carregamento - Jquery e Bootstrap -->
+  <script type="text/javascript" src="../../assets/js/administrador/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/comandos.js"></script>
+
+  <!-- Materialize -->
+  <script type="text/javascript" src="../../assets/js/administrador/materialize.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+
+</body>
+</html>
