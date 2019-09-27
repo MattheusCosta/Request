@@ -1,0 +1,291 @@
+/*---------------------CSS DA TELA DE LOGIN---------------------*/
+/*Configuração da pagina*/
+html, body{
+  background-color: white;
+}
+
+div.row.conteudoLogin{
+  margin: 0px 0px -20px;
+}
+
+/*------------------LOGIN------------------*/
+#loginEstilo{
+  background-color: white;
+}
+
+/*Referente distancia da logo ao topo da tela*/
+#logoPosition{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#logoRequest{
+  width: 55px;
+}
+
+#logoTitulo{
+  margin-left: 10px;
+  font-size: 25px;
+  color: #333333;
+}
+
+/*Remove o sublinhado do link contido na logo REQUEST*/
+a.logoLink:link{
+ text-decoration:none;
+}
+
+/*Sobe o Hero-body para que não se quebre com a responsividade*/
+#hero-body{
+  margin-top: -80px;
+  height: 1px;
+}
+
+#tituloEntrar{
+  font-size: 45px;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#inputEmail{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  margin-top: 5%;
+  margin-bottom: -10px;
+}
+
+/*fa-envelope e fa-lock - Mudam o estilo dos icones dentro das input*/
+.fa-envelope{
+  color: #333333;
+  font-size: 24px;
+}
+
+.fa-lock{
+  color: #333333;
+  font-size: 24px;
+}
+
+/*Muda a cor do background do icone*/
+.input-group-addon{
+  background-color: #f6f6f6;
+}
+
+#inputSenha{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  margin-bottom: -10px;
+}
+
+#btnNovaSenha{
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#btnLogar{
+  border-radius: 20px;
+  height: 50px;
+  color: #f6f6f6;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #333333;
+  margin-top: 10px;
+}
+
+#btnCadastrarMobile{
+  margin-top: -50px;
+}
+
+
+/*------------------CADASTRO------------------*/
+#cadastrarEstilo{
+  background-color: #333333;
+}
+
+#tituloCadastrar{
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#textoCadastrar{
+  margin-top: 25px;
+  font-weight: bold;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+}
+
+#btnCadastrar{
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 50px;
+  color: #333333;
+  background-color: #f6f6f6;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: white;
+}
+
+#radioEstilo[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
+    border: 3px solid #333333;
+}
+
+#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 4px solid #333333;
+}
+
+#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 4px solid #333333;
+}
+
+#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #333333;
+}
+
+#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 4px solid #333333;
+}
+
+/*---------------------CSS DA TELA DE CADASTRO---------------------*/
+/*Configuração da pagina*/
+div.row.conteudoCadastro{
+  margin: 0px 0px -20px;
+}
+
+/*------------------LOGAR------------------*/
+#loginEstilo2{
+  background-color: #333333;
+}
+
+/*Referente distancia da logo ao topo da tela*/
+#logoPosition2{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#logoRequest2{
+  width: 55px;
+}
+
+#logoTitulo2{
+  margin-left: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+/*Remove o sublinhado do link contido na logo REQUEST*/
+a.logoLink2:link{
+ text-decoration:none;
+}
+
+/*Sobe o Hero-body para que não se quebre com a responsividade*/
+#hero-body2{
+  margin-top: -80px;
+  height: 1px;
+  margin-left: -10px;
+}
+
+#tituloLogar{
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#textoLogar{
+  margin-top: 25px;
+  font-weight: bold;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+}
+
+#btnEntrar{
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 50px;
+  color: #333333;
+  background-color: #f6f6f6;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: white;
+}
+
+/*------------------CADASTRO------------------*/
+#cadastrarEstilo2{
+  background-color: white;
+}
+
+#logoTituloMobile{
+  margin-left: 10px;
+  font-size: 25px;
+  color: #333333;
+}
+
+#tituloCadastro{
+  font-size: 45px;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+#inputCadastraNome{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+}
+
+#inputCadastraRM{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+}
+
+#inputCadastraEmail{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  margin-bottom: -20px;
+}
+
+#inputCadastraSenha{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  padding: 0px 5px;
+}
+#inputConfSenha{
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+}
+
+#btnCadastrarUsuario{
+  border-radius: 20px;
+  height: 50px;
+  color: #f6f6f6;
+  background-color: #333333;
+  font-weight: bold;
+  font-size: 17px;
+}
