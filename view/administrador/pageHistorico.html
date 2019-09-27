@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Projeto Request</title>
+
+  <!-- Bootstrap e estilo.css -->
+  <link rel="stylesheet" href="../../assets/css/template/reset.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/estilo.css">
+
+  <!-- Importa Google Icon Font e materialize.css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../assets/css/administrador/materialize.min.css"  media="screen,projection"/>
+
+  <!-- Framework Bulma e Font Awesome -->
+  <link rel="stylesheet" href="../../assets/css/template/all.css">
+  <link rel="stylesheet" href="../../assets/css/administrador/bulma.min.css">
+
+  <!-- Materialize - Para o navegador saber que o site é optimizado para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <section class="hero is-fullheight" id="heroFull">
+    <div class="navbar-fixed">
+      <nav class="bgtopo has-navbar-fixed-top">
+        <div class="nav-wrapper container-fluid">
+          <div class="row">
+            <div class="col l3 m3 s3 left">
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+            </div>
+            <div class="col l9 m9 s9 right nomeAdministrador">
+              <div class="dropdown right" id="dropdownAdministradorButton">
+                <button class="dropdown-toggle" data-toggle="dropdown" id="downButton">
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu" id="dropdownAdministradorEstilo">
+                  <li><a href="pagePerfil.html">Meu Perfil</a></li>
+                  <li><a href="#">Sair</a></li>
+                </ul>
+              </div>
+              <ul class="right">
+                <p id="nomeAdministrador">Administrador</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="pageHistorico.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">history</i>Histórico
+        </a>
+      </li>
+       <li>
+        <a href="pageFuncionario.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">people</i>Funcionários
+        </a>
+      </li>
+      <li>
+        <a href="pageCurso.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">school</i>Componentes
+        </a>
+      </li>
+      <li>
+        <a href="pagePerfil.html" class="waves-effect" id="opcoesMenuMobile">
+          <i class="material-icons" id="opcoesMenuMobile">person</i>Minha Conta
+        </a>
+      </li>
+    </ul>
+    <section class="main hide-on-med-and-down">
+      <aside class="keep">
+        <ul id="marginItens">
+          <li>
+            <a href="pageHistorico.html">
+              <span><i class="material-icons">history</i></span>
+               Histórico
+            </a>
+          </li>
+          <li>
+            <a href="pageFuncionario.html">
+              <span><i class="material-icons">people</i></span>
+               Funcionários
+            </a>
+          </li>
+          <li>
+            <a href="pageCurso.html">
+              <span><i class="material-icons">school</i></span>
+               Componentes
+            </a>
+          </li>
+          <li>
+            <a href="pagePerfil.html">
+              <span><i class="material-icons">person</i></span>
+               Minha conta
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="hero is-fullheight-with-navbar" id="heroFullHeight">
+      <div class="row conteudo">
+        <div class="col l2 m0 s0">
+        </div>
+        <div class="col l10 m12 s12" id="colunaConteudo">
+          <div class="row conteudo2" id="linhaHeader">
+            <div class="input-field col l4 m4 s12">
+              <input type="text" id="oHistorico" value="Histórico" readonly>
+            </div>
+            <div class="col l3 m3 s0">
+            </div>
+            <div class="input-field col l5 m5 s12" id="inputPesquisar">
+              <i class="material-icons prefix fas fa-search"></i>
+              <input class="form-control" type="search" placeholder="Pesquisar">
+            </div>
+          </div>
+
+          <div class="row conteudo2">
+
+            <div class="col l1 m1 s2 center-align" id="positionDownload">
+              <a href="#"><i class="fas fa-download" id="iconDownload"></i></a>
+            </div>
+
+            <div class="col l2 m3 s5" id="legenda">
+              <div class="row conteudo valign-wrapper">
+                <i class="fas fa-circle" id="legendaNotifAcc"></i>
+                <b id="textLegenda">= Aceito</b>
+              </div>
+            </div>
+
+            <div class="col l2 m3 s5" id="legenda">
+              <div class="row conteudo valign-wrapper">
+                <i class="fas fa-circle" id="legendaNotifNeg"></i>
+                <b id="textLegenda">= Negado</b>
+              </div>
+            </div>
+
+            <div class="input-field col l2 m2 s6 right">
+              <select class="form-control">
+                <option>Todos</option>
+                <option>Esta semana</option>
+                <option>Este mês</option>
+              </select>
+            </div>
+
+            <div class="input-field col l3 m3 s6 right">
+              <select class="form-control">
+                <option>Requerimento tipo 1</option>
+                <option>Requerimento tipo 2</option>
+                <option>Requerimento tipo 3</option>
+                <option>Requerimento tipo 4</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="row conteudo2" id="titulosEmails">
+            <div class="col l1 m1 s1">
+              <label id="checkboxTitulos">
+                <input type="checkbox" class="filled-in" onClick="toggle(this)" id="checkboxTitleStyle">
+                <span></span>
+              </label>
+            </div>
+            <div class="col l2 m2 s2 hide-on-small-only">
+              <input type="text" value="N° de protocolo" readonly id="estiloTitulos">
+            </div>
+            <div class="col l2 m2 s2 hide-on-small-only">
+              <input type="text" value="Aluno" readonly id="estiloTitulos">
+            </div>
+            <div class="col l2 m2 s2 hide-on-small-only">
+              <input type="text" value="Secretário" readonly id="estiloTitulos">
+            </div>
+            <div class="col l3 m3 s3 hide-on-small-only">
+              <input type="text" value="Tipo de requerimento" readonly id="estiloTitulos">
+            </div>
+            <div class="col l2 m2 s2 hide-on-small-only">
+              <input type="text" value="Data" readonly id="estiloTitulos">
+            </div>
+          </div>
+          <div class="row emails">
+            <div class="col l12 m12 s12" id="colHistoricoEmails">
+              <div class="row conteudo">
+                <div class="col l12 m12 s12">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoHistorico">
+                          <div class="col l1 m1 s12">
+                            <label id="checkboxLinha">
+                              <input type="checkbox" class="filled-in" name="select" id="checkboxStyle">
+                              <span></span>
+                            </label>
+                          </div>
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Protocolo:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="012-2019" id="protocoloInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Aluno:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="Matheus Costa" id="alunoInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Secretário:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="Camila Santos" id="secretarioInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s5 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Requerimento:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l3 m3 s7" id="estiloInputEmails">
+                            <input type="text" value="Declaração escolar" id="declaracaoInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only center-align" id="estiloInputEmails">
+                            <input type="text" value="Data:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="dd/mm/aaaa" id="dateInput" readonly>
+                            <i class="fas fa-circle right" id="notifAceito"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="row historico" id="conteudoHistorico">
+                          <div class="col l1 m1 s12">
+                            <label id="checkboxLinha">
+                              <input type="checkbox" class="filled-in" name="select" id="checkboxStyle">
+                              <span></span>
+                            </label>
+                          </div>
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Protocolo:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="012-2019" id="protocoloInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Aluno:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="Matheus Costa" id="alunoInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Secretário:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="Camila Santos" id="secretarioInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s5 hide-on-large-only hide-on-med-only" id="estiloInputEmails">
+                            <input type="text" value="Requerimento:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l3 m3 s7" id="estiloInputEmails">
+                            <input type="text" value="Declaração escolar" id="declaracaoInput" readonly>
+                          </div>
+
+                          <div class="col l0 m0 s4 hide-on-large-only hide-on-med-only center-align" id="estiloInputEmails">
+                            <input type="text" value="Data:" id="titleEmail" readonly>
+                          </div>
+                          <div class="col l2 m2 s8" id="estiloInputEmails">
+                            <input type="text" value="dd/mm/aaaa" id="dateInput" readonly>
+                            <i class="fas fa-circle right" id="notifNegado"></i>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- JavaScript no fim da body para optimizar o carregamento - Jquery e Bootstrap -->
+  <script type="text/javascript" src="../../assets/js/administrador/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/administrador/comandos.js"></script>
+
+  <!-- Materialize -->
+  <script type="text/javascript" src="../../assets/js/administrador/materialize.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+  </script>
+
+</body>
+</html>
