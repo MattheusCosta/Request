@@ -1,0 +1,70 @@
+/*---------------------CSS DA TELA DE LOGIN---------------------*/
+/*Configuração da pagina*/
+html, body{
+  background-color: #333333;
+}
+
+div.row.conteudoLogin{
+  margin: 0px 0px -20px;
+}
+
+#colorFullHeight{
+  background-color: #333333;
+}
+
+/*------------------LOGIN------------------*/
+
+#loginEstilo{
+  background-color: white;
+  padding: 0px 0px;
+}
+
+#logoRequest{
+  width: 55px;
+}
+
+#logoTitulo{
+  font-size: 25px;
+  color: #fff;
+  padding: 0px 12px;
+}
+
+/*Remove o sublinhado do link contido na logo REQUEST*/
+a.logoLink:link{
+ text-decoration:none;
+}
+
+#inputEmail{
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  margin-top: 2%;
+  margin-bottom: -10px;
+}
+
+#inputSenha{
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333333;
+  margin-bottom: -10px;
+}
+
+#btnNovaSenha{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#btnLogar{
+  border-radius: 20px;
+  height: 50px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #fff;
+  margin-top: 10px;
+}
