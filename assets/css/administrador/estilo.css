@@ -1,0 +1,1100 @@
+/*---------------------CONFIGURAÇÃO DO SITE---------------------*/
+/*Configuração padrão de paginas*/
+div.row.conteudo{
+  margin: 0px 0px -20px;
+}
+
+#heroFull{
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+div.hero-body{
+  padding: 0px 0px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #333333;
+}
+
+#heroFullHeight{
+  background-color: #f6f6f6;
+  min-height: calc(100vh - 4.0rem);
+}
+
+#colunaConteudo{
+  min-height: calc(100vh - 4.0rem);
+  background-color: #f6f6f6;
+}
+
+div.row.conteudo2{
+  background-color: #f6f6f6;
+  margin: 0px 0px 0px;
+}
+
+#linhaHeader{
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#inputPesquisar{
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+#modalBtn{
+  margin-top: 0.4rem;
+}
+
+#modalTxt{
+  margin-top: 0.8rem;
+}
+
+#modalTxt2{
+  margin-top: 0.4rem;
+}
+
+/*---------------------MENU DO TOPO---------------------*/
+/*Remove o sublinhado do link contido na logo REQUEST*/
+a.logoLink:link{
+ text-decoration:none;
+}
+
+.bgtopo{
+  background-color: white;
+  z-index: 10;
+}
+
+div.col.nomeAdministrador{
+  padding: 0px 0px;
+}
+
+#nomeAdministrador{
+  font-weight: bold;
+  color: #333333;
+  font-size: 20px;
+}
+
+#downButton{
+  color: #333333;
+  font-size: 20px;
+  transition: 0.2s;
+  margin: 0px 12px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+}
+
+#downButton:hover{
+  text-decoration: none;
+  background-color: #fff;
+}
+
+#dropdownAdministradorButton{
+  margin-top: 1.1rem;
+}
+
+#dropdownAdministradorEstilo{
+  margin: 0px 0px;
+  min-width: 7rem;
+  margin-left: -50px;
+}
+
+/*---------------------MENU LATERAL DESKTOP---------------------*/
+#marginItens{
+  margin-top: 70px;
+}
+
+aside{
+  width: 60px;
+  background: #333333;
+  padding: 0px 0px 10px 0px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 99;
+  top: 0;
+}
+
+section.main aside.keep{
+  width: 170px;
+  transition: 0.2s;
+  position: fixed;
+}
+
+aside{
+  height: 100%;
+}
+
+aside ul {
+  list-style: none;
+  width: 100%;
+}
+
+aside ul li {
+  padding: 10px 20px;
+  position: relative;
+}
+
+aside ul li a {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 1px;
+}
+
+aside ul li a:hover{
+  color: #fff;
+}
+
+aside ul li a span{
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  width: 38px;
+}
+
+aside ul li:hover{
+  background: #292929;
+  box-shadow: inset 0px 0px 77px #333333;
+  border-right-style: solid;
+  border-right-width: 4px;
+  border-right-color: #b90504;
+}
+
+aside ul li a:link{
+  text-decoration: none;
+}
+
+aside ul li:hover{
+  font-size: 17px;
+  color: white;
+}
+
+/*---------------------MENU LATERAL MOBILE---------------------*/
+#logoRequestMobile{
+  margin-top: -5px;
+  width: 45px;
+}
+
+#mobile-demo{
+  background: #333333;
+}
+
+.sidenav-trigger{
+  color: #333333;
+}
+
+.sidenav-trigger:link{
+  text-decoration: none;
+}
+
+.sidenav{
+  background-color: #383b44;
+}
+
+li a{
+  color: white;
+}
+
+.sidenav li > a{
+  color: white;
+}
+
+.sidenav li > a:hover{
+  background-color: #2c2e33;
+  color: white;
+  text-decoration: none;
+}
+
+#opcoesMenuMobile{
+  color: #fff;
+}
+
+/*------------------PAGE DE HISTORICO DO ADMINISTRADOR------------------*/
+#oHistorico{
+  font-size: 35px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#positionDownload{
+  margin-top: 1.3rem;
+}
+
+#iconDownload{
+  font-size: 22px;
+  color: #333333;
+}
+
+#legenda{
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+#legendaNotifAcc{
+  font-size: 25px;
+  color: green;
+}
+
+#legendaNotifNeg{
+  font-size: 25px;
+  color: #990100;
+}
+
+#titleEmail{
+  font-weight: bold;
+}
+
+#textLegenda{
+  font-size: 15px;
+}
+
+#titulosEmails{
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+#checkboxTitulos{
+  margin-top: 1rem;
+}
+
+#checkboxTitleStyle[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333333;
+  background-color: #333333;
+  z-index: 0;
+}
+
+#estiloTitulos{
+  font-weight: bold;
+  color: #fff;
+}
+
+div.row.emails{
+  background-color: #f6f6f6;
+  margin: 0px 0px 20px;
+}
+
+#colHistoricoEmails{
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100vh - 18rem);
+  overflow: auto;
+  background-color: #fff;
+}
+
+div.row.historico{
+  background-color: #f6f6f6;
+  margin: 0px -12px 0px;
+}
+
+#conteudoHistorico{
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#conteudoHistorico:hover{
+  background-color: #f2f2f2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #990100;
+}
+
+#checkboxLinha{
+  margin-top: 1rem;
+}
+
+#checkboxStyle[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #990100;
+  background-color: #990100;
+  z-index: 0;
+}
+
+#estiloInputEmails{
+  background-color: transparent;
+  box-shadow: none;
+  color: #424242;
+  height: 50px;
+  font-size: 1rem;
+}
+
+#notifAceito{
+  font-size: 19px;
+  color: green;
+  margin-top: -1.98rem;
+  position: relative;
+}
+
+#notifNegado{
+  font-size: 19px;
+  color: #990100;
+  margin-top: -1.98rem;
+  position: relative;
+}
+
+/*------------------PAGE DE FUNCIONÁRIO DO ADMINISTRADOR------------------*/
+#oFuncionario{
+  font-size: 35px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#btnCreate{
+  color: #fff;
+  font-size: 20px;
+  background-color: #990100;
+  border: none;
+  margin-top: -1rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+#modalStyle{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal1{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal1{width:45%}}
+
+@media only screen and (max-width: 992px){#modal1{width:80%}}
+
+#titleModal{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle{
+  height: 70px;
+}
+
+#inputCadastroFuncionario{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#selectFuncionario{
+  height: 3rem;
+  background-color: #f6f6f6;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#modalButton{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+
+#acoesText{
+  margin-left: 1rem;
+  margin-right: 1.2rem;
+  font-size: 22px;
+}
+
+#positionActDes{
+  margin-top: 1.3rem;
+}
+
+#btnActDes{
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  margin-top: -0.25rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+#iconActDes{
+  font-size: 30px;
+  color: #333333;
+}
+
+#agreeButton{
+  background-color: #990100;
+}
+
+#titleEmail2{
+  font-weight: bold;
+}
+
+#titulosEmails2{
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+#checkboxTitulos2{
+  margin-top: 1rem;
+}
+
+#checkboxTitleStyle2[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color: #333333;
+  z-index: 0;
+}
+
+#estiloTitulos2{
+  font-weight: bold;
+  color: #fff;
+}
+
+div.row.funcionarios{
+  background-color: #f6f6f6;
+  margin: 0px 0px 20px;
+}
+
+#colListaFuncionarios{
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100vh - 18rem);
+  overflow: auto;
+  background-color: #fff;
+}
+
+div.row.lista{
+  background-color: #f6f6f6;
+  margin: 0px -12px 0px;
+}
+
+#conteudoLista{
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#conteudoLista:hover{
+  background-color: #f2f2f2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #990100;
+}
+
+#checkboxLinha2{
+  margin-top: 1rem;
+}
+
+#checkboxStyle2[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #990100;
+  background-color: #990100;
+  z-index: 0;
+}
+
+#estiloInputFuncionario{
+  background-color: transparent;
+  box-shadow: none;
+  color: #424242;
+  height: 50px;
+  font-size: 1rem;
+}
+
+/*------------------PAGE DE COMPONENTES DO ADMINISTRADOR------------------*/
+
+#barraComponentes{
+  margin-bottom: -0.6rem;
+  z-index: -1;
+  margin-top: 1rem;
+}
+
+#opcoesComponentes{
+  padding: 0px 0px;
+}
+
+#componentesFerramentas{
+  background-color: #fff;
+}
+
+#componentesOpc1{
+  background-color: #fff;
+  padding: 10px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+#componentesOpc1:hover{
+  background-color: #fff;
+  padding: 10px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+#componentesOpc2{
+  background-color: #f2f2f2;
+  padding: 7px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#componentesOpc2:hover{
+  background-color: #fff;
+  padding: 10px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+#componentesOpc3{
+  background-color: #f2f2f2;
+  padding: 7px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#componentesOpc3:hover{
+  background-color: #fff;
+  padding: 10px 22px;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+#positionOptions{
+  margin-top: 1.3rem;
+}
+
+#btnNovoCurso{
+  background-color: #990100;
+}
+
+#btnEditarCurso{
+  background-color: #990100;
+  color: #fff;
+}
+
+/*-----------------MODAL DE NOVO CURSO-----------------*/
+#modalStyle2{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal2{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal2{width:45%}}
+
+@media only screen and (max-width: 992px){#modal2{width:80%}}
+
+#titleModal2{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle2{
+  height: 70px;
+}
+
+#inputCadastroCurso{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#selectModulo{
+  height: 3rem;
+  background-color: #f6f6f6;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#modalButton2Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton2{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+/*------------------------------------------------------*/
+
+/*-----------------MODAL DE EDITAR CURSO-----------------*/
+#modalStyle3{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal3{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal3{width:45%}}
+
+@media only screen and (max-width: 992px){#modal3{width:80%}}
+
+#titleModal3{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle3{
+  height: 70px;
+}
+
+#inputInfoCurso{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#selectInfoCurso{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 0px;
+}
+
+#selectModulo{
+  height: 3rem;
+  background-color: #f6f6f6;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#modalButton3Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton3{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+/*------------------------------------------------------*/
+
+#colorTitleComponentes{
+  background-color: #fff;
+}
+
+#titulosComponentes{
+  background-color: #333333;
+  border-radius: 10px;
+  margin: 0px 15px;
+}
+
+#estiloTitulos3{
+  font-weight: bold;
+  color: #fff;
+}
+
+div.row.curso{
+  background-color: #f6f6f6;
+  margin: 0px 0px 20px;
+}
+
+#colCursos{
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100vh - 18rem);
+  overflow: auto;
+  background-color: #fff;
+}
+
+#linhaCurso{
+  margin: 0px 15px 20px;
+}
+
+#conteudoCurso{
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#conteudoCurso:hover{
+  background-color: #f2f2f2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #990100;
+}
+
+#estiloInputCurso{
+  background-color: transparent;
+  box-shadow: none;
+  color: #424242;
+  height: 50px;
+  font-size: 1rem;
+}
+
+/*------------------PAGE DE DISCIPLINAS------------------*/
+
+#btnNovaDisciplina{
+  background-color: #990100;
+}
+
+#btnEditarDisciplina{
+  background-color: #990100;
+  color: #fff;
+}
+
+div.row.disciplina{
+  background-color: #f6f6f6;
+  margin: 0px 0px 20px;
+}
+
+#colDisciplina{
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100vh - 18rem);
+  overflow: auto;
+  background-color: #fff;
+}
+
+#linhaDisciplina{
+  margin: 0px 15px 20px;
+}
+
+#conteudoDisciplina{
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#conteudoDisciplina:hover{
+  background-color: #f2f2f2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #990100;
+}
+
+#estiloInputDisciplina{
+  background-color: transparent;
+  box-shadow: none;
+  color: #424242;
+  height: 50px;
+  font-size: 1rem;
+}
+
+/*-----------------MODAL DE NOVA DISCIPLINA-----------------*/
+#modalStyle4{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal4{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal4{width:45%}}
+
+@media only screen and (max-width: 992px){#modal4{width:80%}}
+
+#titleModal4{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle4{
+  height: 70px;
+}
+
+#inputCadastroDisciplina{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#modalButton4Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton4{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+/*------------------------------------------------------*/
+
+/*-----------------MODAL DE EDITAR DISCIPLINA-----------------*/
+#modalStyle5{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal5{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal5{width:45%}}
+
+@media only screen and (max-width: 992px){#modal5{width:80%}}
+
+#titleModal5{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle5{
+  height: 70px;
+}
+
+#inputCadastroDisciplina{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#modalButton5Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton5{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+/*------------------------------------------------------*/
+
+/*------------------PAGE DE DISCIPLINAS------------------*/
+
+#btnNovoProfessor{
+  background-color: #990100;
+}
+
+#btnEditarProfessor{
+  background-color: #990100;
+  color: #fff;
+}
+
+div.row.professor{
+  background-color: #f6f6f6;
+  margin: 0px 0px 20px;
+}
+
+#colProfessor{
+  position: relative;
+  padding: 0px 0px;
+  height: calc(100vh - 18rem);
+  overflow: auto;
+  background-color: #fff;
+}
+
+#linhaProfessor{
+  margin: 0px 15px 20px;
+}
+
+#conteudoProfessor{
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ccc;
+}
+
+#conteudoProfessor:hover{
+  background-color: #f2f2f2;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: #990100;
+}
+
+#estiloInputProfessor{
+  background-color: transparent;
+  box-shadow: none;
+  color: #424242;
+  height: 50px;
+  font-size: 1rem;
+}
+
+/*-----------------MODAL DE NOVO PROFESSOR-----------------*/
+#modalStyle6{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal6{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal6{width:45%}}
+
+@media only screen and (max-width: 992px){#modal6{width:80%}}
+
+#titleModal6{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle6{
+  height: 70px;
+}
+
+#inputCadastroProfessor{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#modalButton6Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton6{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+
+#tableStyle{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+#tableStyleTop{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+}
+/*------------------------------------------------------*/
+
+/*-----------------MODAL DE EDITAR PROFESSOR-----------------*/
+#modalStyle7{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modal7{
+  border-radius: 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modal7{width:45%}}
+
+@media only screen and (max-width: 992px){#modal7{width:80%}}
+
+#titleModal7{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalFooStyle7{
+  height: 70px;
+}
+
+#inputCadastroProfessor{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#plusButton{
+  font-weight: bold;
+  margin: 0px 15px;
+}
+
+#modalButton7Cad{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalButton7{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+}
+
+#btnSalvarEdit{
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#notifAceito2{
+  color: green;
+  margin-top: 1rem;
+}
+
+#notifNegado2{
+  color: #990100;
+  margin-top: 1rem;
+}
+/*------------------------------------------------------*/
