@@ -90,41 +90,6 @@ div.row.table{
   margin-top: 6px;
 }
 
-#botaoAnularTable{
-  margin-left: -0.9rem;
-}
-
-#botaoEditarCurso{
-  margin-left: -0.9rem;
-}
-
-#formulariosCad{
-  margin-top: 2rem;
-}
-
-#notifAceito2{
-  color: green;
-}
-
-#notifNegado2{
-  color: #990100;
-}
-
-#btnSalvarEdit{
-  height: 40px;
-  margin-top: 0.6rem;
-  background-color: #990100;
-}
-
-#inputNmCurso{
-  background-color: #f6f6f6;
-  padding: 0px 0px 0px 20px;
-}
-
-#editarNmCurso{
-  margin-top: 0.5rem;
-}
-
 /*---------------------MENU DO TOPO---------------------*/
 /*Remove o sublinhado do link contido na logo REQUEST*/
 a.logoLink:link{
@@ -752,9 +717,13 @@ div.row.lista{
   height: 70px;
 }
 
-#inputInfoCurso{
+#inputNmCurso{
   background-color: #f6f6f6;
   padding: 0px 0px 0px 20px;
+}
+
+#editarNmCurso{
+  margin-top: 0.5rem;
 }
 
 #selectInfoCurso{
@@ -925,6 +894,10 @@ div.row.disciplina{
   padding: 0px 0px 0px 20px;
 }
 
+#botaoAnularTable{
+  margin-left: -0.9rem;
+}
+
 #modalButton4Cad{
   width: 100px;
   height: 40px;
@@ -981,6 +954,28 @@ div.row.disciplina{
   width: 100px;
   height: 40px;
   margin-top: 0.6rem;
+}
+
+#botaoEditarCurso{
+  margin-left: -0.9rem;
+}
+
+#formulariosCad{
+  margin-top: 2rem;
+}
+
+#notifAceito2{
+  color: green;
+}
+
+#notifNegado2{
+  color: #990100;
+}
+
+#btnSalvarEdit{
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
 }
 /*------------------------------------------------------*/
 
