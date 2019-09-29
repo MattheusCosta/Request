@@ -217,29 +217,43 @@
                   </div>
                   <div class="col l10 m8 s12" id="tableStyle">
                     <div class="col l12 m12 s12">
-                      <div class="col l8 m8 s8">
-                        <input type="text" class="has-text-weight-bold" value="Curso" readonly>
+                      <div class="col l8 m8 s8" id="tableTitle">
+                        <b>Curso</b>
                       </div>
-                      <div class="col l4 m4 s4">
-                        <input type="text" class="has-text-weight-bold" value="Anular" readonly>
+                      <div class="col l4 m4 s4" id="tableTitle">
+                        <b>Anular</b>
                       </div>
                     </div>
                     <div class="col l12 m12 s12" id="tableStyleTop">
-                      <div class="col l8 m8 s8">
-                        <input type="text" value="Desenvolvimento de sistemas" readonly>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Manutenção e Suporte em Informática</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
-                      <div class="col l3 m3 s3">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-trash"></i>
-                        </button>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Administração</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
-                      <div class="col l8 m8 s8">
-                        <input type="text" value="Administração" readonly>
-                      </div>
-                      <div class="col l3 m3 s3">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-trash"></i>
-                        </button>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Desenvolvimento de sistemas</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -281,22 +295,6 @@
                   </div>
                 </div>
 
-                
-
-                <div class="row">
-                  <div class="col l1 m2 s0">
-                  </div>
-                  <div class="col l10 m8 s12">
-                    <div class="form-group">
-                      <div class="col l12 m12 s12">
-                        <select class="form-control">
-                          <option>Linguagem, trabalho e tecnologia</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <hr style="height:1px; border:none; color:#ccc; background-color:#ccc; margin-top: 0px; margin-bottom: 1.5rem;"/>
 
                 <div class="row">
@@ -325,38 +323,8 @@
                 <div class="row">
                   <div class="col l1 m2 s0">
                   </div>
-                  <div class="col l10 m8 s12" id="tableStyle">
-                    <div class="col l12 m12 s12">
-                      <div class="col l12 m12 s12">
-                        <input type="text" class="has-text-weight-bold" value="Curso" readonly>
-                      </div>
-                    </div>
-                    <div class="col l12 m12 s12" id="tableStyleTop">
-                      <div class="col l10 m10 s10">
-                        <input type="text" value="Desenvolvimento de sistemas" readonly>
-                      </div>
-                      <div class="col l2 m2 s2">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-pen"></i>
-                        </button>
-                      </div>
-                      <div class="col l10 m10 s10">
-                        <input type="text" value="Administração" readonly>
-                      </div>
-                      <div class="col l2 m2 s2">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-pen"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col l1 m2 s0">
-                  </div>
                   <div class="col l10 m8 s12 center-align">
-                    <button class="button is-light waves-effect waves-light">Novo curso
+                    <button class="button is-light waves-effect waves-light">Adicionar novo curso
                       <i class="fas fa-plus" id="plusButton"></i>
                     </button>
                   </div>
@@ -365,10 +333,66 @@
                 <div class="row">
                   <div class="col l1 m2 s0">
                   </div>
+                  <div class="col l10 m8 s12" id="tableStyle">
+                    <div class="col l12 m12 s12">
+                      <div class="col l8 m8 s8" id="tableTitle">
+                        <b>Curso</b>
+                      </div>
+                      <div class="col l4 m4 s4" id="tableTitle">
+                        <b>Editar</b>
+                      </div>
+                    </div>
+                    <div class="col l12 m12 s12" id="tableStyleTop">
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Manutenção e Suporte em Informática</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarCurso" title="Editar curso">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifNegado2" readonly></i>
+                        </div>
+                      </div>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Administração</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarCurso" title="Editar curso">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifAceito2" readonly></i>
+                        </div>
+                      </div>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Desenvolvimento de sistemas</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarCurso" title="Editar curso">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifAceito2" readonly></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" id="formulariosCad">
+                  <div class="col l1 m2 s0">
+                  </div>
                   <div class="col l10 m8 s12">
                     <div class="form-group">
                       <div class="col l4 m4 s4">
-                        <label for="modulo" class="title is-6">Editar curso</label>
+                        <label for="modulo" class="title is-6">Curso</label>
                       </div>
                       <div class="col l8 m8 s8">
                         <select class="form-control" disabled>
@@ -389,7 +413,7 @@
                   <div class="col l10 m8 s12">
                     <div class="form-group">
                       <div class="col l6 m6 s6">
-                        <label for="modulo" class="title is-6">Editar módulo</label>
+                        <label for="modulo" class="title is-6">Módulo</label>
                       </div>
                       <div class="col l6 m6 s6">
                         <select class="form-control" disabled>
@@ -406,8 +430,26 @@
                 <div class="row">
                   <div class="col l1 m2 s0">
                   </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">Situação</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" disabled>
+                          <option>Ativado</option>
+                          <option>Desativado</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
                   <div class="col l10 m8 s12 center-align">
-                    <button type="button" class="button is-dark" id="btnSalvarEdit" disabled>Salvar alterações</button>
+                    <button type="button" class="button is-dark" id="btnSalvarEdit" disabled>Cadastrar</button>
                   </div>
                 </div>
 

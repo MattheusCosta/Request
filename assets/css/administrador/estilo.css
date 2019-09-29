@@ -52,6 +52,19 @@ div.row.conteudo2{
   background-color: #fff;
 }
 
+#tableStyle{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 0px 10px 10px 10px;
+}
+
+#tableStyleTop{
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+}
+
 #modalBtn{
   margin-top: 0.4rem;
 }
@@ -60,8 +73,47 @@ div.row.conteudo2{
   margin-top: 0.8rem;
 }
 
+div.row.table{
+  margin: 0px -12px 10px;
+}
+
 #modalTxt2{
   margin-top: 0.4rem;
+}
+
+#tableTitle{
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+#tableRow{
+  margin-top: 6px;
+}
+
+#botaoAnularTable{
+  margin-left: -0.9rem;
+}
+
+#botaoEditarCurso{
+  margin-left: -0.9rem;
+}
+
+#formulariosCad{
+  margin-top: 2rem;
+}
+
+#notifAceito2{
+  color: green;
+}
+
+#notifNegado2{
+  color: #990100;
+}
+
+#btnSalvarEdit{
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
 }
 
 /*---------------------MENU DO TOPO---------------------*/
@@ -1020,17 +1072,6 @@ div.row.professor{
   margin-top: 0.6rem;
 }
 
-#tableStyle{
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-}
-
-#tableStyleTop{
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: black;
-}
 /*------------------------------------------------------*/
 
 /*-----------------MODAL DE EDITAR PROFESSOR-----------------*/
@@ -1080,21 +1121,5 @@ div.row.professor{
   width: 100px;
   height: 40px;
   margin-top: 0.6rem;
-}
-
-#btnSalvarEdit{
-  height: 40px;
-  margin-top: 0.6rem;
-  background-color: #990100;
-}
-
-#notifAceito2{
-  color: green;
-  margin-top: 1rem;
-}
-
-#notifNegado2{
-  color: #990100;
-  margin-top: 1rem;
 }
 /*------------------------------------------------------*/
