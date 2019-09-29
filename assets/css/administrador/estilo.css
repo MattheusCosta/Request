@@ -116,6 +116,15 @@ div.row.table{
   background-color: #990100;
 }
 
+#inputNmCurso{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#editarNmCurso{
+  margin-top: 0.5rem;
+}
+
 /*---------------------MENU DO TOPO---------------------*/
 /*Remove o sublinhado do link contido na logo REQUEST*/
 a.logoLink:link{
