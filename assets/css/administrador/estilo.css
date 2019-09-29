@@ -90,6 +90,14 @@ div.row.table{
   margin-top: 6px;
 }
 
+#notifAceito2{
+  color: green;
+}
+
+#notifNegado2{
+  color: #990100;
+}
+
 /*---------------------MENU DO TOPO---------------------*/
 /*Remove o sublinhado do link contido na logo REQUEST*/
 a.logoLink:link{
@@ -1107,6 +1115,10 @@ div.row.professor{
 #inputCadastroProfessor{
   background-color: #f6f6f6;
   padding: 0px 0px 0px 20px;
+}
+
+#botaoEditarProfessor{
+  margin-left: -0.9rem;
 }
 
 #plusButton{

@@ -255,29 +255,43 @@
                   </div>
                   <div class="col l10 m8 s12" id="tableStyle">
                     <div class="col l12 m12 s12">
-                      <div class="col l8 m8 s8">
-                        <input type="text" class="has-text-weight-bold" value="Disciplina" readonly>
+                      <div class="col l8 m8 s8" id="tableTitle">
+                        <b>Disciplina</b>
                       </div>
-                      <div class="col l4 m4 s4">
-                        <input type="text" class="has-text-weight-bold" value="Anular" readonly>
+                      <div class="col l4 m4 s4" id="tableTitle">
+                        <b>Anular</b>
                       </div>
                     </div>
                     <div class="col l12 m12 s12" id="tableStyleTop">
-                      <div class="col l8 m8 s8">
-                        <input type="text" value="Banco de Dados II" readonly>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Banco de dados II</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
-                      <div class="col l3 m3 s3">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-trash"></i>
-                        </button>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Segurança de Sistemas de Informação</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
-                      <div class="col l8 m8 s8">
-                        <input type="text" value="Programação WEB III" readonly>
-                      </div>
-                      <div class="col l3 m3 s3">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-trash"></i>
-                        </button>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s8">
+                          <p id="textoTable">Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoAnularTable" title="Anular curso">
+                            <i class="fas fa-times"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -319,22 +333,6 @@
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col l1 m2 s0">
-                  </div>
-                  <div class="col l10 m8 s12">
-                    <div class="form-group">
-                      <div class="col l12 m12 s12">
-                        <select class="form-control">
-                          <option>João Paulo</option>
-                          <option>João Pedro</option>
-                          <option>Matheus Costa</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <hr style="height:1px; border:none; color:#ccc; background-color:#ccc; margin-top: 0px; margin-bottom: 1.5rem;"/>
 
                 <div class="row">
@@ -363,18 +361,10 @@
                 <div class="row">
                   <div class="col l1 m2 s0">
                   </div>
-                  <div class="col l10 m8 s12">
-                    <div class="form-group">
-                      <div class="col l12 m12 s12">
-                        <label class="title is-6">Situação do professor</label>
-                      </div>
-                      <div class="col l12 m12 s12">
-                        <select class="form-control">
-                          <option>Ativado</option>
-                          <option>Desativado</option>
-                        </select>
-                      </div>
-                    </div>
+                  <div class="col l10 m8 s12 center-align">
+                    <button class="button is-light waves-effect waves-light">Nova disciplina
+                      <i class="fas fa-plus" id="plusButton"></i>
+                    </button>
                   </div>
                 </div>
 
@@ -389,41 +379,54 @@
                   </div>
                   <div class="col l10 m8 s12" id="tableStyle">
                     <div class="col l12 m12 s12">
-                      <div class="col l2 m2 s2">
+                      <div class="col l8 m8 s8" id="tableTitle">
+                        <b>Disciplina</b>
                       </div>
-                      <div class="col l10 m10 s10">
-                        <input type="text" class="has-text-weight-bold" value="Disciplina" readonly>
+                      <div class="col l4 m4 s4" id="tableTitle">
+                        <b>Editar</b>
                       </div>
-                      <!-- <div class="col l4 m4 s4">
-                        <input type="text" class="has-text-weight-bold" value="ON/OFF" readonly>
-                      </div>
-                      <div class="col l2 m2 s2">
-                        <input type="text" class="has-text-weight-bold" value="Editar" readonly>
-                      </div> -->
                     </div>
                     <div class="col l12 m12 s12" id="tableStyleTop">
-                      <div class="col l2 m2 s2">
-                        <i class="fas fa-circle" id="notifAceito2" readonly></i>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Banco de Dados II</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarProfessor" title="Editar professor">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifNegado2" readonly></i>
+                        </div>
                       </div>
-                      <div class="col l7 m7 s7">
-                        <input type="text" value="Banco de Dados II" readonly>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Segurança de Sistemas de Informação</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarProfessor" title="Editar professor">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifAceito2" readonly></i>
+                        </div>
                       </div>
-                      <div class="col l2 m2 s2">
-                        <button class="button is-white waves-effect waver-light" id="modalBtn">
-                          <i class="fas fa-power-off"></i>
-                        </button>
+                      <div class="row table valign-wrapper" id="tableRow">
+                        <div class="col l9 m9 s9">
+                          <p id="textoTable">Desenvolvimento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas</p>
+                        </div>
+                        <div class="col l2 m2 s2">
+                          <button class="button is-white waves-effect waver-light" id="botaoEditarProfessor" title="Editar professor">
+                            <i class="fas fa-pen"></i>
+                          </button>
+                        </div>
+                        <div class="col l1 m1 s1">
+                          <i class="fas fa-circle" id="notifAceito2" readonly></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col l1 m2 s0">
-                  </div>
-                  <div class="col l10 m8 s12 center-align">
-                    <button class="button is-light waves-effect waves-light">Nova disciplina
-                      <i class="fas fa-plus" id="plusButton"></i>
-                    </button>
                   </div>
                 </div>
 
@@ -482,6 +485,24 @@
                           <option>Banco de dados II</option>
                           <option>Desenvolvimento de sistemas</option>
                           <option>Programção de aplicativos mobile II</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col l1 m2 s0">
+                  </div>
+                  <div class="col l10 m8 s12">
+                    <div class="form-group">
+                      <div class="col l6 m6 s6">
+                        <label for="modulo" class="title is-6">Situação</label>
+                      </div>
+                      <div class="col l6 m6 s6">
+                        <select class="form-control" disabled>
+                          <option>Ativado</option>
+                          <option>Desativado</option>
                         </select>
                       </div>
                     </div>
