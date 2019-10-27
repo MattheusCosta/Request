@@ -36,6 +36,10 @@ div.hero-body{
   background-color: #f6f6f6;
 }
 
+#iconSpace{
+  margin-left: 10px;
+}
+
 /*---------------------MENU DO TOPO---------------------*/
 /*Remove o sublinhado do link contido na logo REQUEST*/
 a.logoLink:link{
@@ -187,6 +191,97 @@ li a{
 
 #opcoesMenuMobile{
   color: #fff;
+}
+
+/*------------------DADOS DO SECRETÁRIO------------------*/
+#modalStyleSec{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modalSec{
+  border-radius: 10px;
+  width: 30%;
+}
+
+#btnHabilitar{
+  width: 100%;
+  height: 40px;
+  margin-top: 0.8rem;
+  background-color: #990100;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modalSec{width:45%}}
+
+@media only screen and (max-width: 992px){#modalSec{width:80%}}
+
+#titleSec{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#inputEstiloNm{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputEstiloEm{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputNPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputNCPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#colPass{
+  padding-right: 5px;
+}
+
+#colEye{
+  padding: 0px;
+}
+
+#pass-status{
+  padding: 15px;
+  width: 100%;
+  height: 3rem;
+  background-color: #f6f6f6;
+}
+
+#modalFooSec{
+  height: 70px;
+}
+
+#modalSalvar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalCancelar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
 }
 
 /*---------------------CONTEUDO DA PAGE DO SECRETARIO---------------------*/
