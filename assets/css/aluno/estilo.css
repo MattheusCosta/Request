@@ -837,10 +837,341 @@ div.row.historico:hover{
   font-size: 20px;
 }
 
-/*-----------------PAGINA EM CONSTRUÇÃO-----------------*/
-#pageConstrucao{
-  height: 75vh;
-  align-items: center;
+
+/*-----------------CONTEUDO DA TELA DE PERFIL-----------------*/
+#conteudoPerfil{
+  height: calc(90vh - 4.0rem);
   background-color: #fff;
   border-radius: 10px;
+  overflow: auto;
+}
+
+#rowInfos{
+  height: 100%;
+  padding: 15px 0px 15px;
+}
+
+div.row.titleConta{
+  margin: 0px 30px -20px;
+}
+
+div.row.titleConta2{
+  margin: 0px 0px -20px;
+}
+
+#primeiraLinha{
+  height: 5rem;
+}
+
+#btnHabilitar{
+  width: 100%;
+  height: 40px;
+  background-color: #990100;
+  color: #fff;
+  font-weight: 600;
+}
+
+#iconSpace{
+  margin-left: 5px;
+}
+
+#hr{
+  margin-left: 2.5%;
+  margin-top: 18px;
+  height:2px; 
+  width:95%; 
+  border:none; 
+  color:#333333; 
+  background-color:#333333; 
+}
+
+div.row.inputs{
+  margin: 0px 15px 0px;
+}
+
+#titleLabel{
+  font-weight: 600;
+  color: black;
+}
+
+#inputEstiloNm{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloRM{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input#inputEstiloRM[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input#inputEstiloRM[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+#inputEstiloTr{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloRG{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#hrForm{
+  margin-left: 2.5%;
+  margin-top: 18px;
+  height:2px; 
+  width:95%;
+  opacity: 0.5;
+  border:none; 
+  color:#333333; 
+  background-color:#333333; 
+}
+
+#inputEstiloLog{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloNumero{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input#inputEstiloNumero[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+input#inputEstiloNumero[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+#inputEstiloBr{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloCd{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloEstd{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloCp{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#inputEstiloMail{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  height: 2rem;
+  margin: 0px;
+  padding: 0px;
+  padding-left : 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#alterarSenha{
+  margin: 0px;
+  margin-top: 1.65rem;
+  background-color: #990100;
+  height: 2.1rem;
+}
+
+#fooPerfil{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#btnSalvar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  margin-right: 10px;
+  background-color: #990100;
+}
+
+#btnCancelar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  margin-right: 20px;
+}
+
+/*------------------MODAL ALTERAR SENHA------------------*/
+#modalStylePass{
+  border: none;
+  box-shadow: none;
+  height: calc(100% - 70px);
+  margin: 0px 0px;
+}
+
+#modalPass{
+  border-radius: 10px;
+  width: 30%;
+}
+
+#agreeButton{
+  background-color: #990100;
+}
+
+#formSpace{
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1207px){#modalPass{width:45%}}
+
+@media only screen and (max-width: 992px){#modalPass{width:80%}}
+
+#inputPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputNPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#inputNCPassword{
+  background-color: #f6f6f6;
+  padding: 0px 0px 0px 20px;
+}
+
+#colPass{
+  padding-right: 5px;
+}
+
+#colEye{
+  padding: 0px;
+}
+
+#pass-status{
+  padding: 15px;
+  width: 100%;
+  height: 3rem;
+  background-color: #f6f6f6;
+}
+
+#modalFooPass{
+  height: 75px;
+}
+
+#modalSalvar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
+  background-color: #990100;
+}
+
+#modalCancelar{
+  width: 100px;
+  height: 40px;
+  margin-top: 0.6rem;
 }
