@@ -45,6 +45,8 @@ a.logoLink:link{
   color: #333333;
   font-weight: bold;
   text-decoration: underline;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 }
 
 #inputEmail{
@@ -95,7 +97,7 @@ a.logoLink:link{
   font-weight: bold;
   font-size: 17px;
   background-color: #333333;
-  margin-top: 10px;
+  margin-top: -2rem;
 }
 
 #btnCadastrarMobile{
@@ -109,7 +111,7 @@ a.logoLink:link{
 }
 
 #tituloCadastrar{
-  margin-top: 15px;
+  margin-top: 1.1rem;
   color: white;
   text-align: center;
   font-size: 50px;
@@ -117,7 +119,7 @@ a.logoLink:link{
 }
 
 #textoCadastrar{
-  margin-top: 25px;
+  margin-top: 3.5rem;
   font-weight: bold;
   color: white;
   font-size: 27px;
@@ -125,7 +127,7 @@ a.logoLink:link{
 }
 
 #btnCadastrar{
-  margin-top: 50px;
+  margin-top: 5rem;
   border-radius: 20px;
   height: 50px;
   color: #333333;
@@ -135,25 +137,30 @@ a.logoLink:link{
   background-color: white;
 }
 
-#radioEstilo[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
+#radioEstilo[type="radio"]:not(:checked)+span:before, #radioEstilo[type="radio"]:not(:checked)+span:after {
     border: 3px solid #333333;
 }
 
-#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+#radioEstilo[type="radio"]:checked+span:after, #radioEstilo[type="radio"].with-gap:checked+span:before, #radioEstilo[type="radio"].with-gap:checked+span:after {
     border: 4px solid #333333;
 }
 
-#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+#radioEstilo[type="radio"]:checked+span:after, #radioEstilo[type="radio"].with-gap:checked+span:before, #radioEstilo[type="radio"].with-gap:checked+span:after {
     border: 4px solid #333333;
 }
 
-#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+#radioEstilo[type="radio"]:checked+span:after, #radioEstilo[type="radio"].with-gap:checked+span:after {
     background-color: #333333;
 }
 
-#radioEstilo[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+#radioEstilo[type="radio"]:checked+span:after, #radioEstilo[type="radio"].with-gap:checked+span:before, #radioEstilo[type="radio"].with-gap:checked+span:after {
     border: 4px solid #333333;
 }
+
+#radioEstilo:checked{
+  border: 4px solid #333333;
+}
+
 
 /*---------------------CSS DA TELA DE CADASTRO---------------------*/
 /*Configuração da pagina*/
